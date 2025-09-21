@@ -34,6 +34,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
+      <head>
+        <Script
+          src="https://use.typekit.net/YOUR_PROJECT_ID.js"
+          strategy="beforeInteractive"
+        />
+      </head>
       <body>{children}</body>
       {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID && (
         <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID} />

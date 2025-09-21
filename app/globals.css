@@ -126,7 +126,21 @@ body {
 
 /* Tagline: ah-hakushu-addressing-font utility */
 .font-tagline {
-  font-family: "ah-hakushu-addressing-font", sans-serif;
+  font-family: "ah-hakushu-addressing-font", "Noto Sans JP", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Adobe Fonts読み込み後のフォント適用 */
+.wf-active .font-tagline {
+  font-family: "ah-hakushu-addressing-font", "Noto Sans JP", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* フォント未読み込み時のフォールバック */
+.wf-inactive .font-tagline {
+  font-family: "Noto Sans JP", sans-serif;
   font-weight: 600;
   font-style: normal;
 }
