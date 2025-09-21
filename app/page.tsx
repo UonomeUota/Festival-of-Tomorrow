@@ -320,14 +320,14 @@ export default function Landing() {
         {/* Full-bleed Key Visual */}
         <div className="relative w-screen h-[100svh] md:left-1/2 md:-translate-x-1/2 md:aspect-[21/9] md:max-h-[70vh] overflow-hidden md:border-y border-slate-800">
           <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-900" />
-          {/* キービジュアル画像 */}
-          <Image
-            src="/asset/ComfyUI_00005_.png"
-            alt="Key Visual"
-            fill
-            sizes="100vw"
-            className="object-cover object-center md:object-[center_top]"
-            priority
+          {/* キービジュアル動画 */}
+          <video
+            src="/asset/Timeline 1.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover object-center md:object-[center_top]"
           />
           <div className="absolute inset-0">
             <div className="absolute inset-0">

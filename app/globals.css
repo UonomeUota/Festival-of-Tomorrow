@@ -109,3 +109,20 @@ body {
   font-weight: 500;
   font-style: normal;
 }
+
+/* キービジュアル用のループアニメーション */
+@keyframes imageLoop {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-image-loop {
+  animation: imageLoop 3s ease-in-out infinite;
+}
