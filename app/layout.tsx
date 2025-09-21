@@ -37,7 +37,7 @@ export default function RootLayout({
       <head>
         <Script
           id="adobe-fonts"
-          strategy="beforeInteractive"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               (function(d) {
