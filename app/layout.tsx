@@ -2,9 +2,12 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter, Noto_Sans_JP } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { GoogleAnalytics } from "@next/third-parties/google";
 import Script from "next/script"
 import { Suspense } from "react"
 import "./globals.css"
+
+const gaId = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID;
 
 const inter = Inter({
   subsets: ["latin"],
@@ -36,18 +39,7 @@ export default function RootLayout({
         <Script id="adobe-typekit" strategy="afterInteractive">
           {`(function(d){var config={kitId:'yzj4wbd',scriptTimeout:3000,async:true},h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)})(document);`}
         </Script>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-4XTXLX1FZJ"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-4XTXLX1FZJ');
-          `}
-        </Script>
+        {gaId && <GoogleAnalytics gaId={gaId} />}
         <Suspense fallback={null}>{children}</Suspense>
         <Analytics />
       </body>
