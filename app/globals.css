@@ -117,6 +117,13 @@ body {
   font-style: normal;
 }
 
+/* Headings: heisei-mincho-std utility */
+.font-heading {
+  font-family: "heisei-mincho-std", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
 /* Placeholder font for irohamaru-mikami */
 .font-irohamaru-mikami::placeholder {
   font-family: "irohamaru-mikami", sans-serif;

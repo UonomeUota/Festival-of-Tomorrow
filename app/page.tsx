@@ -347,7 +347,7 @@ export default function Landing() {
       <section id="trailer" className="py-20 bg-slate-800/50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-noto-sans-jp">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-heading">
               {language === "jp" ? "ティザートレーラー" : "Teaser Trailer"}
             </h2>
           </div>
@@ -371,7 +371,7 @@ export default function Landing() {
       <section id="synopsis" className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-noto-sans-jp">{language === "jp" ? "あらすじ" : "Synopsis"}</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-heading">{language === "jp" ? "あらすじ" : "Synopsis"}</h2>
           </div>
 
           <div className="space-y-6">
@@ -418,7 +418,7 @@ export default function Landing() {
       <section id="characters" className="py-20 bg-slate-800/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-noto-sans-jp">{language === "jp" ? "登場人物" : "Characters"}</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-heading">{language === "jp" ? "登場人物" : "Characters"}</h2>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -432,7 +432,7 @@ export default function Landing() {
                       <User className="w-12 h-12 text-slate-400 group-hover:text-teal-400 transition-colors" />
                     </div>
                     <CardTitle>
-                      <span className="text-lg font-noto-sans-jp">{character.name[language]}</span>
+                      <span className="text-lg font-heading">{character.name[language]}</span>
                     </CardTitle>
                   </div>
                   <CardDescription>
@@ -463,7 +463,7 @@ export default function Landing() {
       <section id="themes" className="py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-noto-sans-jp">{language === "jp" ? "テーマ" : "Themes"}</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-heading">{language === "jp" ? "テーマ" : "Themes"}</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -474,7 +474,7 @@ export default function Landing() {
                     <Zap className="w-8 h-8 text-teal-400" />
                   </div>
                   <CardTitle>
-                    <span className="text-xl">
+                    <span className="text-xl font-heading">
                       {language === "jp" ? "伝統×テクノロジー" : "Tradition × Technology"}
                     </span>
                   </CardTitle>
@@ -494,7 +494,7 @@ export default function Landing() {
                 <div className="w-16 h-16 mx-auto bg-rose-400/20 rounded-full flex items-center justify-center mb-4 group-hover:bg-rose-400/30 transition-colors">
                   <Brain className="w-8 h-8 text-rose-400" />
                 </div>
-                <CardTitle className="text-xl">
+                <CardTitle className="text-xl font-heading">
                   {language === "jp" ? "記憶とアイデンティティ" : "Memory & Identity"}
                 </CardTitle>
               </CardHeader>
@@ -512,7 +512,7 @@ export default function Landing() {
                 <div className="w-16 h-16 mx-auto bg-amber-400/20 rounded-full flex items-center justify-center mb-4 group-hover:bg-amber-400/30 transition-colors">
                   <Heart className="w-8 h-8 text-amber-400" />
                 </div>
-                <CardTitle className="text-xl">
+                <CardTitle className="text-xl font-heading">
                   {language === "jp" ? "非合理の価値" : "The Value of the Irrational"}
                 </CardTitle>
               </CardHeader>
@@ -532,7 +532,7 @@ export default function Landing() {
       <section id="episodes" className="py-20 bg-slate-800/30">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-noto-sans-jp">{language === "jp" ? "エピソード" : "Episodes"}</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-heading">{language === "jp" ? "エピソード" : "Episodes"}</h2>
             <p className="text-slate-400">{language === "jp" ? "ティザーエピソード" : "Teaser Episodes"}</p>
           </div>
 
@@ -545,7 +545,7 @@ export default function Landing() {
                       {language === "jp" ? "準備中" : "Coming Soon"}
                     </Badge>
                   </div>
-                  <CardTitle className="text-lg font-noto-sans-jp">{episode.title[language]}</CardTitle>
+                  <CardTitle className="text-lg font-heading">{episode.title[language]}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-slate-300 text-sm leading-relaxed mb-4">{episode.logline[language]}</p>
@@ -569,7 +569,7 @@ export default function Landing() {
       <section id="news" className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-noto-sans-jp">{language === "jp" ? "ニュース" : "News"}</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-heading">{language === "jp" ? "ニュース" : "News"}</h2>
           </div>
 
           <div className="space-y-6">
@@ -589,7 +589,7 @@ export default function Landing() {
                         </Badge>
                         <span className="text-sm text-slate-500">{item.date}</span>
                       </div>
-                      <h3 className="text-lg font-semibold mb-2">{item.title[language]}</h3>
+                      <h3 className="text-lg font-semibold mb-2 font-heading">{item.title[language]}</h3>
                       <p className="text-slate-300 text-sm font-irohamaru-mikami">{item.content[language]}</p>
                     </div>
                   </div>
@@ -603,7 +603,7 @@ export default function Landing() {
       {/* Subscribe Section */}
       <section id="subscribe" className="py-20 bg-slate-800/50">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-heading">
             {language === "jp" ? "最新情報を受け取る" : "Stay Updated"}
           </h2>
           <p className="text-slate-300 mb-8 leading-relaxed font-irohamaru-mikami">
@@ -659,7 +659,7 @@ export default function Landing() {
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold mb-4">{language === "jp" ? "リンク" : "Links"}</h3>
+              <h3 className="text-lg font-semibold mb-4 font-heading">{language === "jp" ? "リンク" : "Links"}</h3>
               <div className="space-y-2 text-sm">
                 <div>
                   <a href="#" className="text-slate-400 hover:text-teal-400 transition-colors font-irohamaru-mikami">
@@ -680,7 +680,7 @@ export default function Landing() {
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold mb-4">{language === "jp" ? "フォロー" : "Follow"}</h3>
+              <h3 className="text-lg font-semibold mb-4 font-heading">{language === "jp" ? "フォロー" : "Follow"}</h3>
               <div className="flex space-x-4">
                 <a href="#" className="text-slate-400 hover:text-teal-400 transition-colors">
                   <span className="sr-only">X</span>
