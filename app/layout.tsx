@@ -36,6 +36,18 @@ export default function RootLayout({
         <Script id="adobe-typekit" strategy="afterInteractive">
           {`(function(d){var config={kitId:'yzj4wbd',scriptTimeout:3000,async:true},h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)})(document);`}
         </Script>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-4XTXLX1FZJ"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-4XTXLX1FZJ');
+          `}
+        </Script>
         <Suspense fallback={null}>{children}</Suspense>
         <Analytics />
       </body>
