@@ -106,7 +106,7 @@ export default function Landing() {
   return (
     <div className="min-h-screen bg-slate-900 text-white overflow-x-hidden">
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-sm border-b border-slate-800">
+      <nav className="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
@@ -318,7 +318,7 @@ export default function Landing() {
         </div>
 
         {/* Full-bleed Key Visual */}
-        <div className="relative w-screen h-[100svh] md:left-1/2 md:-translate-x-1/2 md:aspect-[21/9] md:max-h-[70vh] overflow-hidden md:border-y border-slate-800">
+        <div className="relative w-screen h-[100svh] md:left-1/2 md:-translate-x-1/2 md:aspect-[21/9] md:max-h-[70vh] overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-900" />
           {/* キービジュアル動画 */}
           <video

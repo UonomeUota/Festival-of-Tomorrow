@@ -7,7 +7,6 @@ import Script from "next/script"
 import { Suspense } from "react"
 import "./globals.css"
 
-const gaId = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID;
 
 const inter = Inter({
   subsets: ["latin"],
