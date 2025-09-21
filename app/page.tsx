@@ -650,7 +650,7 @@ export default function Landing() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <div className="text-2xl font-bold text-teal-400 mb-4">未来祀り</div>
+              <div className="text-2xl font-bold font-tagline text-teal-400 mb-4">未来祀り</div>
               <p className="text-slate-400 text-sm leading-relaxed font-irohamaru-mikami">
                 {language === "jp"
                   ? "伝統とテクノロジーが織りなす新しい物語"
