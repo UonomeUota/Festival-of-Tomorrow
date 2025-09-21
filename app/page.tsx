@@ -240,7 +240,7 @@ export default function Landing() {
                 </div>
               </div>
 
-              <div className="text-teal-400 font-yotag text-[clamp(16px,7vw,32px)]">
+              <div className="text-teal-400 font-tagline text-[clamp(16px,7vw,32px)]">
                 {language === "jp" ? "未来は、祀られる。" : "The future is consecrated."}
               </div>
             </div>
@@ -288,7 +288,7 @@ export default function Landing() {
                   </div>
                 </div>
 
-                <div className="text-teal-400 font-yotag text-[clamp(16px,2vw,28px)]">
+                <div className="text-teal-400 font-tagline text-[clamp(16px,2vw,28px)]">
                   {language === "jp" ? "未来は、祀られる。" : "The future is consecrated."}
                 </div>
               </div>

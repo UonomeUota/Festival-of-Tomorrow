@@ -124,6 +124,13 @@ body {
   font-style: normal;
 }
 
+/* Tagline: ah-hakushu-addressing-font utility */
+.font-tagline {
+  font-family: "ah-hakushu-addressing-font", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
 /* Placeholder font for irohamaru-mikami */
 .font-irohamaru-mikami::placeholder {
   font-family: "irohamaru-mikami", sans-serif;
